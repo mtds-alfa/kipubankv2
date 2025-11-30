@@ -21,3 +21,7 @@ node_modules
 
 # cli
 dist
+
+# Node package files
+package-lock.json
+llms-full.txt
