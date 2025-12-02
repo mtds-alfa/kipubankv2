@@ -1,28 +1,28 @@
 # Key Features Implemented:
 ## Multi-Token Support:
-Handles both ETH (native token) and ERC20 tokens
-Uses address(0) for ETH deposits/withdrawals
-Tracks balances per token per user
+- Handles both ETH (native token) and ERC20 tokens
+- Uses address(0) for ETH deposits/withdrawals
+- Tracks balances per token per user
 ## Security Features:
-Implements OpenZeppelin's Ownable for access control
-Uses SafeERC20 for safe token transfers
-Follows checks-effects-interactions pattern
-Includes reentrancy protection
-Uses custom errors for gas efficiency
+- Implements OpenZeppelin's Ownable for access control
+- Uses SafeERC20 for safe token transfers
+- Follows checks-effects-interactions pattern
+- Includes reentrancy protection
+- Uses custom errors for gas efficiency
 ## Chainlink Integration:
-Uses Chainlink Price Feed for ETH/USD conversion
-Ready to be extended for other token price feeds
+- ses Chainlink Price Feed for ETH/USD conversion
+- Ready to be extended for other token price feeds
 ## Deposit & Withdrawal Controls:
-Enforces bank-wide deposit cap (configurable)
-Implements per-transaction withdrawal limits
-Tracks total deposits and withdrawals
+- Enforces bank-wide deposit cap (configurable)
+- Implements per-transaction withdrawal limits
+- Tracks total deposits and withdrawals
 ## Events & Error Handling:
-Emits events for all state-changing operations
-Uses custom errors with descriptive messages
-Includes input validation
+- Emits events for all state-changing operations
+- Uses custom errors with descriptive messages
+- Includes input validation
 ## Admin Functions:
-recoverTokens for admin to recover accidentally sent tokens
-All admin functions are protected with onlyOwner
+- recoverTokens for admin to recover accidentally sent tokens
+- All admin functions are protected with onlyOwner
 
 ## For ETH: Use the zero address (0x000...000) as the token address.
 ## For tokens: You need to approve the KipuBankV2 contract to spend your tokens before depositing.
