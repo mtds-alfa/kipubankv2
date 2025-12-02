@@ -25,9 +25,7 @@
 - All admin functions are protected with onlyOwner
 
 ## For ETH: Use the zero address (0x000...000) as the token address.
-## For tokens: You need to approve the KipuBankV2 contract to spend your tokens before depositing.
-## Amounts: Use ethers.utils.parseEther() for ETH or ethers.utils.parseUnits(amount, decimals) for tokens.
-## Gas: Make sure you have enough ETH to pay the transaction fees.
+
 
 # 🏗 Scaffold-ETH 2
 
